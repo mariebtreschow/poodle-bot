@@ -1,0 +1,26 @@
+{
+  "name": "poodle-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariebtreschow/poodle-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariebtreschow/poodle-bot/issues"
+  },
+  "homepage": "https://github.com/mariebtreschow/poodle-bot#readme",
+  "dependencies": {
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "google-spreadsheet": "^2.0.5",
+    "lodash": "^4.17.10"
+  }
+}
