@@ -25,7 +25,7 @@ app.post('/poodle', (req, res) => {
     doodle.get().then((poodleDoodle) => {
         res.send({
             "response_type": "in_channel",
-            "text": `${poodleDoodle}`,
+            "text": `Today's work is ${poodleDoodle}..!`,
         });
     })
 });
