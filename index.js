@@ -23,10 +23,17 @@ app.get('/', (req, res) => {
 
 app.post('/poodle', (req, res) => {
     doodle.get().then((poodleDoodle) => {
-        res.send({
-            "response_type": "in_channel",
-            "text": `Today's word is... ${poodleDoodle}!`,
-        });
+        if(poodleDoodle) {
+            res.send({
+                "response_type": "in_channel",
+                "text": `Today's word is... ${poodleDoodle}!`,
+            });
+        } else {
+            res.send({
+                "response_type": "in_channel",
+                "text": `Could not find today's word... try again later!`,
+            });
+        }
     })
 });
 
